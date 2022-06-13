@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/385de94e38.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Nick Kuemmling Portfolio</title>
+</head>
+<body>
+    
+    <!-- Anchor tag to skip to main content-->
+    <a href="#main" class="skip-link">Skip to main content.</a>
+
+    <header>
+        <div class="wrapper">
+            <ul>
+                <li><a href="#about" class="hover-underline-animation">About</a></li>
+                <li><a href="#skills" class="hover-underline-animation">Skills</a></li>
+                <li><a href="#projects" class="hover-underline-animation">Projects</a></li>
+                <li><a href="#contact" class="hover-underline-animation">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section>
+                <div class="titleContainer">
+                    <h1>nick kuemmling</h1>
+                    <p>Guelph based web developer</p>
+                    <button><a href="#contact" >get in touch</a></button>
+                </div>
+        </section>
+
+        <section id="about" class="aboutMeBackground">
+            <div class="wrapper">
+                <div class="aboutMeContainer">
+                    <h2>about me</h2>
+                    <p>I'm a web-developer with a passion for photography and design based out of Guelph, Ontario. Fueled mostly by coffee, I challenge myself everyday to master the tools and concepts of web-development. I am passionate about creating impactful web applications using React, JavaScript, HTML and SASS. I find myself focused on minimalist clean designs that provide a playful and engaging user experience.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills" class="skillsBackground">
+            <div class="wrapper">
+                <div class="skillsContainer">
+                    <h2>skills</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i><p>HTML5</p></li>
+                        <li><i class="fa-brands fa-css3"></i><p>CSS3</p></li>
+                        <li><i class="fab fa-sass"></i><p>SASS</p></li>
+                        <li><i class="fa-brands fa-js-square"></i><p>JAVASCRIPT</p></li>
+                        <li><i class="fa-brands fa-react"></i><p>REACT</p></li>
+                        <li><i class="fa-brands fa-github"></i><p>GITHUB</p></li>
+                        <li><i class="fa-brands fa-github"></i><p>FIREBASE</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projectsBackground">
+            <div class="wrapper">
+                <div class="projectsContainer">
+                    <h2>projects</h2>
+                    <div class="eachProjectContainer">
+                        <img src="./assets/laptopDelicious.jpg" alt="">
+                        <div class="projectTextContainer">
+                            <p class="projectsTitle">DELICIOUS</p>
+                            <p class="projectsLanguages">HTML, SCSS, JAVASCRIPT</p>
+                            <p>A restaurant layout built to be user friendly, assessable, and adaptable to many screen sizes. Includes home, blog, and contact pages.</p>
+                            <a href="https://nickkuemmling.github.io/nickKuemmlingProjectOne/webpages/index.html">view live</a>
+                            <a href="https://github.com/Nickkuemmling/nickKuemmlingProjectOne.git">view code</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="projectsContainer">
+                    <div class="eachProjectContainer2">
+                        <img src="./assets/laptopOhWow.jpg" alt="">
+                        <div class="projectTextContainer2">
+                            <p class="projectsTitle">Oh Wow...</p>
+                            <p class="projectsLanguages">HTML, SCSS, JAVASCRIPT</p>
+                            <p>A restaurant layout built to be user friendly, assessable, and adaptable to many screen sizes. Includes home, blog, and contact pages.</p>
+                            <a href="https://calm-eclair-5dc4c7.netlify.app/?fbclid=IwAR2vT1Yx0qQje-mCVUHy6vwTZddtn00tij0MrgLCQlm29vQyVQuNMCu30pI">view live</a>
+                            <a href="https://github.com/wowAppProject2/ohwow.git">view code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="getInTouchBackground">
+            <div class="wrapper">
+                <div class="linksContainer">
+                    <h2>get in touch</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/feed/"><img src="./assets/linkedin-3-32.png" alt="LinkedIn Logo"></a></li>
+                        <li><a href="https://www.instagram.com/nick.kuemmling/"><img src="./assets/instagram-32.png" alt="Instagram Logo"></a></li>
+                        <li><a href=""><img src="./assets/email-32.png" alt="Email Logo"></a></li>
+                    </ul>
+        
+        
+                    <p>Please feel free to shoot me an email</p>
+        
+                    <form action="this is where netlifys link goes" method="get">
+                        <label for="formName">NAME</label><br>
+                        <input type="text" id="formName" name="formName"><br>
+        
+                        <label for="formEmail">EMAIL ADDRESS</label><br>
+                        <input type="text" id="formEmail" name="formEmail"><br>
+        
+                        <label for="formMessage">NAME</label><br>
+                        <textarea type="text" id="formMessage" name="formMessage"></textarea>
+                    </form>
+                    
+                    <!-- <input type="sumbit" name="submit"> -->
+                    <button>submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+            <p>Built in 2022 by Nick Kuemmling.</p>
+        </footer>
+
+</body>
+</html>

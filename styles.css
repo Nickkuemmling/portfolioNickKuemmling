@@ -1,0 +1,436 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* COLOR GUIDE */
+guide {
+    color: #A9502F;
+    color: #424B6D;
+    color: #5169BD;
+    color: #a3b8f0;
+    color: #F2F4F5;
+    color: #EEAF98;
+    font-family: 'Playfair Display', serif;
+    /*700 Bold Italic */
+    font-family: 'Source Sans Pro', sans-serif;
+    /* 600 Semibold, 400 Regular */
+}
+/* GENERAL STYLING */
+
+html {
+    box-sizing: border-box;
+    font-size: 125%;
+}
+
+.wrapper {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+img {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+i {
+    font-size: 5rem;
+    font-family: "Font Awesome 5 Brands";
+}
+/* COMMON ELEMENTS */
+
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: #EEAF98;
+    padding: 10px 38px;
+    font-size: 1rem;
+    border: none;
+}
+
+button:hover,
+button:focus {
+    background-color: #eeaf98d6;
+    cursor: pointer;
+}
+
+.projectsBackground a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    background-color: #EEAF98;
+    color: #000;
+    padding: 10px 38px;
+}
+
+.projectsBackground a:hover,
+.projectsBackground a:focus {
+    background-color: #eeaf98d6;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    background-color: #424B6D;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    
+}
+
+header a  {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 600;
+    padding: 2px 4px;
+}
+
+.titleContainer a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-weight: 600;
+
+}
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.28s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* TITLE */
+
+.titleContainer {
+    background-color: #424B6D;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.titleContainer p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.titleContainer button {
+    margin: 30px;
+}
+
+
+/* ABOUT ME */
+
+.aboutMeBackground {
+padding: 5%;
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.aboutMeContainer h2 {
+    color: #5169BD;
+}
+
+.aboutMeContainer p {
+    max-width: 60%;
+    line-height: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400px;
+}
+
+/* SKILLS */
+
+.skillsBackground {
+    background-color: #a3b8f0;
+    padding: 10%;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsContainer ul{
+    display: flex;
+    margin-top: 20px;
+    gap: 25px;
+
+}
+
+.skillsContainer ul li {
+    margin: 20px;
+    text-align: center;
+}
+
+.skillsContainer ul li p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600px;
+    font-size: 1.5rem;
+}
+
+.fab {
+    margin-bottom: 15px;
+}
+
+/* PROJECTS */
+
+.projectsBackground {
+    background-color: #F2F4F5;
+    padding: 5%;
+}
+
+.eachProjectContainer {
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 40px;
+}
+
+.eachProjectContainer2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 40px;
+}
+
+.eachProjectContainer img,.eachProjectContainer2 img  {
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+
+
+
+.eachProjectContainer button,.eachProjectContainer2 button {
+    margin: 0 10px 80px 0;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .projectsContainer a {
+    padding: 10px 38px;
+    background-color: none;
+} */
+
+
+.projectTextContainer {
+    width: 35%;
+}
+
+.projectTextContainer2 {
+    width: 35%;
+    text-align: end;
+}
+
+.projectTextContainer p,.projectTextContainer2 p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.projectsTitle {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.projectsLanguages {
+    font-style: italic;
+    color: #424B6D;
+    margin: 0;
+
+}
+
+.projectsContainer h2 {
+    color: #424B6D;
+    text-align: center;
+    margin: 30px;
+}
+
+hr {
+    color: #000;
+    height: 6px;
+    background-color: white;
+    border: none;
+}
+
+.eachProjectContainer {
+    display: flex;
+    
+}
+
+/* GET IN TOUCH */
+
+.getInTouchBackground {
+    background-color: #5169BD;
+    padding: 5%;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.linksContainer h2 {
+    color: white;
+}
+
+.linksContainer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+}
+
+.linksContainer img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.linksContainer p {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.linksContainer img:hover,
+.linksContainer img:focus {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.linksContainer button {
+    margin-top: 30px;
+}
+
+/* FORM */
+
+label {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+form {
+    width: 60%;
+    text-align: start;
+}
+
+textarea {
+    width: 100%;
+    height: 210px;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+    resize: none;
+    color: rgb(127, 127, 127);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+    color: rgb(127, 127, 127);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #424B6D;
+    padding: 15px;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
